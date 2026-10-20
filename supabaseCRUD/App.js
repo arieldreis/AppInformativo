@@ -12,9 +12,11 @@ async function testConnection(nameTable) {
 
     if( err ){
       console.error(`Erro ao acessar a tabela ${nameTable}: `, err);
+    } else {
+      console.log(`Dados da tabela ${nameTable}: `, data);
     }
 
-    console.log(`Requisição realizada com sucesso da tabela ${nameTable}: ${data} `);
+    //console.log(`Requisição realizada com sucesso da tabela ${nameTable}: ${data} `);
   } catch ( error ){
     console.error("Erro ao realizar conexão: ", error);
   }
